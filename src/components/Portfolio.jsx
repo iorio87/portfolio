@@ -1,27 +1,28 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import reactGames from "../assets/portfolio/gamesapp.jpg";
+import reactWeather from "../assets/portfolio/weather.jpg";
+import reactCommerce from "../assets/portfolio/pgvinos.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: reactWeather,
+      code: "https://github.com/iorio87/weatherApp",
+      demo: "https://weather-app-iorio87.vercel.app/",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: reactGames,
+      code: "https://github.com/iorio87/PI-VideoGames",
+      demo: "https://videogames-app-rose.vercel.app/",
     },
     {
       id: 3,
-      src: navbar,
-    },     
-
-  
+      src: reactCommerce,
+      code: "https://github.com/iorio87/PG-Ecommerce-Vinos",
+      demo: "",
+    },
   ];
 
   return (
@@ -38,7 +39,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 px-12">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, code, demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -47,10 +48,14 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={demo} target="_blank">
+                    Demo
+                  </a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                  <a href={code} target="_blank">
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
