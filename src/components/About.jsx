@@ -4,16 +4,16 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white pt-20 md:pt-0"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-3xl sm:text-4xl font-bold border-b-2 sm:border-b-4 border-gray-500 p-2 inline">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
+        <p className="sm:text-xl">
           Hi! I'm Luciano, passionate about programming, investments and above
           all for learning new things all the time. Since I was a kid I've
           always been interested in programming and I always did it as a hobby
@@ -26,7 +26,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-xl">
+        <p className="sm:text-xl">
           More about me... I have a bachelor's degree in administration and I
           have been working in the treasury area for 15 years. I'm also an
           enthusiast of new technologies focusing in the last 5 years in the
