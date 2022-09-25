@@ -2,6 +2,7 @@ import React from "react";
 import reactGames from "../assets/portfolio/gamesapp.jpg";
 import reactWeather from "../assets/portfolio/weather.jpg";
 import reactCommerce from "../assets/portfolio/pgvinos.jpg";
+import reactDashboard from "../assets/portfolio/dashboard.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -22,6 +23,12 @@ const Portfolio = () => {
       src: reactCommerce,
       code: "https://github.com/iorio87/PG-Ecommerce-Vinos",
       demo: "https://front-pgvinos.vercel.app/",
+    },
+    {
+      id: 4,
+      src: reactDashboard,
+      code: "https://github.com/iorio87/dashboard",
+      demo: "https://dashboard-iorio87.vercel.app/",
     },
   ];
 
