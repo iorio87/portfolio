@@ -1,8 +1,8 @@
 import React from "react";
-import reactGames from "../assets/portfolio/gamesapp.jpg";
-import reactWeather from "../assets/portfolio/weather.jpg";
-import reactCommerce from "../assets/portfolio/pgvinos.jpg";
-import reactDashboard from "../assets/portfolio/dashboard.png";
+import reactGames from "../assets/portfolio/gamesapp.webp";
+import reactWeather from "../assets/portfolio/weather.webp";
+import reactCommerce from "../assets/portfolio/pgvinos.webp";
+import reactDashboard from "../assets/portfolio/dashboard.webp";
 
 const Portfolio = () => {
   const portfolios = [
